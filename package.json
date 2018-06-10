@@ -1,0 +1,22 @@
+{
+  "name": "weather_app_async_practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arashabedin/weather_app_async_practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arashabedin/weather_app_async_practice/issues"
+  },
+  "homepage": "https://github.com/arashabedin/weather_app_async_practice#readme",
+  "dependencies": {
+    "request": "^2.73.0"
+  }
+}
