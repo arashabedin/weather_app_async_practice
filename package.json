@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/arashabedin/weather_app_async_practice#readme",
   "dependencies": {
-    "request": "^2.73.0"
+    "request": "^2.73.0",
+    "yargs": "^4.8.1"
   }
 }
