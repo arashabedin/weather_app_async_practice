@@ -1,7 +1,7 @@
 const request = require('request');
 
 
-geocodeAdress = (adress, callback)=> {
+geocodeAddress = (adress, callback)=> {
 const googleMapAPIurl = "https://maps.googleapis.com/maps/api/geocode/json?address="
 
 request({
@@ -26,5 +26,5 @@ request({
 }
 module.exports = {
 
-    geocodeAdress
+    geocodeAddress
 }; 

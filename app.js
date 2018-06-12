@@ -14,16 +14,16 @@ const argv = yargs
 .alias('help','h')
 .argv;
 
-geocode.geocodeAdress(argv.address, (errorMessage, results) => {
+geocode.geocodeAddress(argv.address, (errorMessage, results) => {
 if(errorMessage){
     console.log(errorMessage);
 }else{
-console.log(results.address);
+console.log(`Looking for weather results in ${results.address}`);
 weather.getWeather(results.latitude,results.longitude, (errorMessage, weatherResults)=>{
     if(errorMessage){
         console.log(errorMessage);
     }else{
-        console.log(`It's currently ${weatherResults.temperature} degree (feels like ${weatherResults.apparentTemprature}), in ${argv.address}. `);
+        console.log(`It's currently ${weatherResults.temperature} degree (feels like ${weatherResults.apparentTemprature}), in ${results.address}. `);
     }
     });
 }
