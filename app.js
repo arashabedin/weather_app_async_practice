@@ -18,7 +18,7 @@ geocode.geocodeAddress(argv.address, (errorMessage, results) => {
 if(errorMessage){
     console.log(errorMessage);
 }else{
-console.log(`Looking for weather results in ${results.address}`);
+console.log(`Looking for weather results in ${results.address}...`);
 weather.getWeather(results.latitude,results.longitude, (errorMessage, weatherResults)=>{
     if(errorMessage){
         console.log(errorMessage);
